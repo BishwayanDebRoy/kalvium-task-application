@@ -1,0 +1,119 @@
+/* Basic Reset */
+body, html, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f8c291, #6a89cc);
+  color: #2d3436;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container Styling */
+.container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  width: 100%;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #2d3436;
+}
+
+/* Language Selector Styling */
+.language-selector {
+  margin-bottom: 20px;
+}
+
+.language-selector select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #6a89cc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.language-selector select:focus {
+  border-color: #f8c291;
+  outline: none;
+}
+
+/* Code Editor Styling */
+.code-editor {
+  margin-bottom: 20px;
+  border: 2px solid #6a89cc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.CodeMirror {
+  border-radius: 5px;
+}
+
+/* Button Styling */
+.button {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1rem;
+}
+
+.button:hover {
+  background-color: #4b4da4;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+/* Output Styling */
+.output {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f1f2f6;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  text-align: left;
+}
+
+.output::before {
+  content: 'Output:';
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
